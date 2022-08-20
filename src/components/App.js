@@ -6,21 +6,22 @@ import Login from "./pages/Login";
 import Quiz from "./pages/Quiz";
 import SignUp from "./pages/SignUp";
 import Result from "./Result";
-
+import AuthProvider from '../Contexts/AuthContext';
 function App() {
   return (
     <Router>
-      <Layout>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/sign-up" component={SignUp} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/quiz" component={Quiz} />
-          <Route exact path="/result" component={Result} />
-        </Switch>
-
-      </Layout>
-    </Router>
+      <AuthProvider>
+        <Layout>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/sign-up" component={SignUp} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/quiz" component={Quiz} />
+            <Route exact path="/result" component={Result} />
+          </Switch>
+        </Layout>
+      </AuthProvider>
+    </Router >
   );
 }
 
