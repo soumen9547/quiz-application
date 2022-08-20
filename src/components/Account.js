@@ -1,14 +1,16 @@
 import classes from "../styles/Account.module.css";
-
+import {Link} from 'react-router-dom'
 export default function Account() {
     return (
         <div className={classes.account}>
             <span className="material-icons-outlined" title="Account">
                 account_circle
             </span>
-            <span
+            <Link to="/sign-up">Signup</Link>
+            <Link to="/login">Login</Link>
+            {/* <span
                 className="material-icons-outlined">logout
-            </span>
+            </span> */}
         </div>
     );
 }
