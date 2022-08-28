@@ -33,9 +33,9 @@ export default function UserVideoList(page) {
                 setError(true);
             }
         }
-        setTimeout(() => {
+       // setTimeout(() => {
             userVideoFetch();
-        }, 2000);
+        //}, 1000);
        
     }, [page]);
     return {
