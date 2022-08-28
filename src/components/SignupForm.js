@@ -24,7 +24,6 @@ export default function SignupForm() {
   const { signUp } = useAuth();
   async function handleSubmit(e) {
     e.preventDefault();
-    alert(user.email)
     if (!user.email && !user.password && !user.username) {
       return setError("please enter the required fill");
     } else if (!user.email) {
@@ -38,7 +37,6 @@ export default function SignupForm() {
     } else if (user.password !== user.confirm_password) {
       return setError("password don't match!");
     }
-    // alert('ssss');
     try {
       setError("");
       setLoading(true);
