@@ -8,7 +8,7 @@ export default function Question({ answers }) {
             <div className={classes.question} key={index}>
                 <div className={classes.title}>
                     <span className="material-icons-outlined"> help_outline </span>
-                    answer.title
+                    {answer.title}
                 </div>
                 <Answers input={false} options={answer.options} />
             </div>
