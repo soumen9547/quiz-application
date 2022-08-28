@@ -30,8 +30,9 @@ export default function SignupForm() {
       return setError("please enter email");
     } else if (!user.password) {
       return setError("please enter password");
-    }//else if (user.password.length<=6) {
-      // return setError("please enter 6 character of password");
+    }else if (user.password.length < 6) {
+       return setError("Password should be at least 6 characters ");
+    }
     else if (!user.confirm_password) {
       return setError("please enter confirm password");
     } else if (user.password !== user.confirm_password) {
