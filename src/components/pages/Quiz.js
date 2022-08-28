@@ -92,7 +92,7 @@ export default function Quiz() {
                     <Answers input={true} options={qna[currentQuestion].options} handleChange={handleAnswerChange}
                     />
                      <ProgressBar next={nextQuestion} prev={previousQuestion} progress={percentage} submit={submit}/>
-                    <MiniPlayer id={id} title={qna[currentQuestion].title}/>
+                    {/* <MiniPlayer id={id} title={qna[currentQuestion].title}/> */}
                 </>
             )}
         </>
