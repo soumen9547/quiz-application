@@ -10,7 +10,7 @@ export default function Nav() {
         <li>
         <Link to="/" className={classes.brand} >
             <img src={logo} alt="Soumen" />
-            <h3>Soumen Rakshit</h3>
+            <h3>Quiz App</h3>
           </Link>
         </li>
       </ul>
