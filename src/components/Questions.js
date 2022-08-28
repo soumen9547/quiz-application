@@ -6,7 +6,7 @@ export default function Question({ answers }) {
     return (
         answers.map((answer, index) => (
             <div className={classes.question} key={index}>
-                <div className={classes.qtitle}>
+                <div className={classes.title}>
                     <span className="material-icons-outlined"> help_outline </span>
                     answer.title
                 </div>
